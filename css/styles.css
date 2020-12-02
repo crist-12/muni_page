@@ -10,20 +10,47 @@ body {
 }
 
 header {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  padding-bottom: 1.5em;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  box-shadow: 0px 2px 5px #000;
+  border-style: solid;
+  animation: fade-intro-up 2s ease;
+  -webkit-animation: fade-intro-up 2s ease;
 }
 
+@keyframes fade-intro-up {
+    0%{opacity: 0;
+      -webkit-transform: translate3d(0,-50px,0);
+      -moz-transform: translate3d(0,-50px,0);
+      -ms-transform: translate3d(0,-50px,0);
+      -o-transform: translate3d(0,-50px,0);
+      transform: translate3d(0,-50px,0);
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform: translate3d(0,0,0);
+      -moz-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      -o-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+  }
+
 header .logo{
-    flex: 1;
+  padding-top: 1.5em;
 }
 
 header nav {
-    margin-right: 2rem;
+  padding-top: 1.5em;
 }
 
 .logo img{
@@ -37,104 +64,312 @@ header nav ul{
     list-style: none;
     display:flex;
   }
+  
+/*Solo Dios sabe cómo funciona, así que no lo toque >:v */
 
 header nav ul li a{
     display: inline-block;
-    padding:1em 1.5em;
+    padding: 1em 1.5em;
     text-decoration: none;
     color:#333;
     font-weight: bold;
     background-color: #fff;
   }
 
-header nav ul li .yellow{
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #ffc107;
+  header nav ul li .yellow {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition:0.5s;
   }
-
-  header nav ul li .green{
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #28a745;
-  }
-
-  header nav ul li .gray{
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #6c757d;
-  }
-
-  header nav ul li .yellow:hover{
+  
+  header nav ul li .yellow:hover {
+    background-color: transparent;
+    border-color: transparent;
     color: #ffc107;
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #ffc107;
   }
 
-  header nav ul li .green:hover{
+  header nav ul li .yellow:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .yellow::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .yellow:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .yellow::before {
+    border-bottom: 2px solid #ffc107;
+  }
+
+  header nav ul li .green {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .green:hover {
+    background-color: transparent;
+    border-color: transparent;
     color: #28a745;
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #28a745;
   }
 
-  header nav ul li .gray:hover{
-    color: #6c757d;
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #6c757d;
+  header nav ul li .green:hover:before{
+    transition-delay: .2s;
   }
+  
+  header nav ul li .green::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .green:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .green::before {
+    border-bottom: 2px solid #28a745;
+  }
+
+  header nav ul li .gray {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .gray:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #6c757d;
+  }
+
+  header nav ul li .gray:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .gray::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .gray:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .gray::before {
+    border-bottom: 2px solid #6c757d;
+  }
+
+  /*Hasta aquí >:v */
 
   main {
+    margin-top:7rem;
+  }
+
+  main .parallax1 {
+    width: 100%;
+    height: 500px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/san-nicolas7.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main .parallax1 p {
+    font-family: 'Rock Salt';
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  main .presentacion {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    margin: 40px 20px;
+    margin-top: ;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
-  footer{
-      background-color:
+  main .presentacion .info {
+    font-family: 'Roboto';
+    padding: 1em;
+    background-color: #E2E2E2;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
   }
 
-  .right{
-   height: 900px;
-    margin: 0px 10px;
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    width: 25%;
-    background: #6c757d;
+  main .presentacion img {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
   }
 
-  .center{
-    margin: 0px 10px;
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    width: 50%;
-    background: #6c757d;
+  main .parallax2 {
+    width: 100%;
+    height: 500px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/aereo1.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .left{
-    margin: 0px 10px;
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    width: 25%;
-    background: #6c757d;
+  main .parallax2 p {
+    font-family: 'Rock Salt';
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  main .afterparallax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333333;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  main .afterparallax .titulo {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  main .afterparallax .datos {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  main .afterparallax .datos .dato1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #333333;
+    padding: 1em;
+    width: 320px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  main .afterparallax .datos .dato1:hover {
+    border: solid 2px #ffc107;
+  }
+
+  main .afterparallax .datos .dato1 .dato11{
+    color: #bbb;
+    font-family: 'Roboto';
+    font-size: 2em;
+    text-align: center;
+    padding: 0.1em;
+    margin: 0px;
+  }
+
+  main .afterparallax .datos .dato1 .dato12 {
+    color: #fff;
+    font-family: 'Ubuntu Mono';
+    font-size: 4em;
+    font-weight: bold;
+    padding: 0.1em;
+    margin: 0px;
+  }
+
+  main .afterparallax .datos .dato2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #333333;
+    padding: 1em;
+    width: 320px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  main .afterparallax .datos .dato2:hover {
+    border: solid 2px #28a745;
+  }
+
+  main .afterparallax .datos .dato2 .dato21{
+    color: #bbb;
+    font-family: 'Roboto';
+    font-size: 2em;
+    text-align: center;
+    padding: 0.1em;
+    margin: 0px;
+  }
+
+  main .afterparallax .datos .dato2 .dato22 {
+    color: #fff;
+    font-family: 'Ubuntu Mono';
+    font-size: 4em;
+    font-weight: bold;
+    padding: 0.1em;
+    margin: 0px;
   }
 
   footer{
@@ -142,9 +377,9 @@ header nav ul li .yellow{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    padding:1em;
-    background-color:  #f1ecdd;
-    columns: #000000;;
+    padding:0.5em;
+    background-color:  #000;
+    color: #f1ecdd;
   }
 
   footer nav ul{
@@ -159,16 +394,47 @@ header nav ul li .yellow{
 
   footer nav ul li a{
     text-decoration: none;
-    color: #000000;
+    color: #f1ecdd;
     display:inline-block;
     text-decoration:none;
-    padding:0.5em 1em;/* (Top Right Bottom Left) *//* (Top Bottom) (Right Left) */ /* TRBL  Top Right Bottom Left*/
+    padding: 0em 1em;
     text-align:center;
+    font-size: 1.05rem;
   }
   
   footer nav ul li a i{
     width:33px;
     vertical-align: middle;
+  }
+
+  .media {
+    padding: 0.1em 1em;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+  }
+
+  .media:hover{
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   }
 
   footer section p{
