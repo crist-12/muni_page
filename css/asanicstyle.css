@@ -209,13 +209,18 @@ header nav ul li a{
   main {
     margin-top:7rem;
     width: 100%;
+
     
   }
 main section.asan{
+    height: 15rem;
+    margin-bottom: -1rem;
     display:block;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    border-bottom-left-radius: 55%;
+   border-bottom-right-radius: 55%;
 }
 main section.asan div{
     display: flex;
@@ -225,7 +230,7 @@ main section.asan div{
  
 }
 main section.asan img{
-    
+    margin-top: 1rem;
     width: 10rem;
     height: 10rem;
     background-color: rgb(131, 120, 120);
@@ -237,23 +242,23 @@ main section.asan h1{
 
 /*qhcm*/
 main section.qhcm {
-   
-   margin-bottom: 2rem;
-    height: 20rem;
-    background-image: url("/Tratadas/g\ \(5\).jpg");
+   margin-top: -5rem;
+    height: 25rem;
+    background-image: url("/Tratadas/a\(6\).jpg");
     background-repeat: no-repeat;
-    background-position: center ;
+    background-position-x: left ;
+    background-position-y: bottom ;
     background-size: cover;
 }
 main section.qhcm h1{
-    padding: 2rem;
+    padding-top: 7rem;
     text-align: center;   
     color: #fff;
 }
 main section.qhcm p{
     font-size: 1.5rem;
-    padding: 1rem;
     text-align: center; 
+    justify-content: center;
     color: #fff;  
 }
     /*qhcm*/
@@ -284,31 +289,29 @@ main section.paralax p{
 /*Card*/
 
 main section.uno{
-    overflow: hidden;
-    border-radius: 2%;
-    margin: 1rem;
+    
+  
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
+    background-color:#c9cdd1;
     align-items: center;
     justify-content: center;
 }
 
 main section.uno div.card{
-    overflow: hidden;
-  position: relative;
+  
   margin: 2rem;
   border-radius: 5%;
   height: 20rem;
   width: 15rem;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0px 10px 15px rgb(46, 46, 46);
   border-color: #000;
   
 }
 
-main section.uno div.card p{
-    overflow: hidden;
+main section.uno div.card div p{
+    
     padding: 1rem;
     text-align: justify;
     justify-content: center;
@@ -316,25 +319,33 @@ main section.uno div.card p{
     letter-spacing: 1px;
     color:rgb(0, 0, 0);
 }
+main section.uno div.card div{
+    
+  height: 17rem;
+  width: 15rem;
+}
+
 main section.uno div.card div.top{
-    overflow: hidden;
-   position: relative;
-   top: -0.5rem;
+    
+  
+   margin-top: -0.5rem;
    border-top-left-radius: 55%;
    border-top-right-radius: 55%;
     height: 1.5rem;
     width: 100%;
-    background-color:#28a745;
+    background-color: #ffc107;
+    
 }
 main section.uno div.card div.down{
-    overflow: hidden;
-    position: absolute;
-    bottom: -0.5rem;
+    
+   
+    
     border-bottom-left-radius: 55%;
     border-bottom-right-radius: 55%;
     height: 1.5rem;
     width: 15rem;
-    background-color: #ffc107;
+    background-color:#28a745;
+    
 }
 
 /*Card*/
