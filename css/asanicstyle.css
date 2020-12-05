@@ -213,6 +213,7 @@ header nav ul li a{
     
   }
 main section.asan{
+   
     height: 15rem;
     margin-bottom: -1rem;
     display:block;
@@ -294,6 +295,10 @@ main section.uno{
     display: flex;
     flex-wrap: wrap;
     background-color:#c9cdd1;
+    background-image: url("/Tratadas/a\(7\).JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
 }
