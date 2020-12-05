@@ -7,6 +7,7 @@ body {
     font-size:100%;
     font-size:1em;
     margin-top:25px;
+    width: 100%;
 }
 
 header {
@@ -64,6 +65,10 @@ header nav ul{
     margin:0px;
     list-style: none;
     display:flex;
+  }
+
+  header nav ul li {
+    box-sizing: border-box;
   }
   
 /*Solo Dios sabe cómo funciona, así que no lo toque >:v */
@@ -210,6 +215,7 @@ header nav ul li a{
 
   main {
     margin-top:7rem;
+    width: 100%;
   }
 
   main .parallax1 {
@@ -264,7 +270,10 @@ header nav ul li a{
   main .historia {
     display: flex;
     flex-direction: row;
-    margin: 2em 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   main .historia .info {
@@ -479,4 +488,179 @@ header nav ul li a{
   footer section p{
       justify-content: center;
       text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    header {
+      position: absolute;
+    }
+
+    footer nav ul li {
+      box-sizing: border-box;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    main .afterparallax .titulo p {
+      text-align: center;
+      font-size: 0.8em;
+    }
+
+    main .afterparallax .titulo {
+      margin-bottom: 1em;
+    }
+
+    main .afterparallax .datos {
+      flex-wrap: wrap;
+    }
+
+    main .afterparallax .datos .dato1 {
+      border-color: #ffc107;
+      margin-bottom: 1em;
+    }
+
+    main .afterparallax .datos .dato2 {
+      border-color: #28a745;
+      margin-bottom: 1em;
+    }
+
+    main .parallax1 p {
+      text-align: center;
+    }
+
+    main .presentacion {
+      flex-direction: column-reverse;
+    }
+
+    main .presentacion img{
+      width: 100%;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 0px;
+    }
+
+    main .presentacion .info {
+      border-top-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 0%;
+      width: 93.5%;
+      font-size: 1.5em;
+    }
+
+    main .historia {
+      flex-direction: column;
+    }
+  
+    main .historia .info {
+      border-top-right-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 0%;
+      width: 93.5%;
+      font-size: 1.5em;
+    }
+  
+    main .historia img {
+      width: 100%;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 0px;
+    }
+
+    @media screen and (max-width: 480px) {
+      header {
+        position: absolute;
+      }
+
+      footer nav ul li {
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+
+      footer nav ul {
+        flex-direction: column;
+      }
+
+      footer nav ul li a {
+        font-size: 1.5em;
+      }
+  
+      main .afterparallax .titulo p {
+        text-align: center;
+        font-size: 0.7em;
+      }
+  
+      main .afterparallax .titulo {
+        margin-bottom: 1em;
+      }
+  
+      main .afterparallax .datos {
+        flex-wrap: wrap;
+      }
+  
+      main .afterparallax .datos .dato1 {
+        border-color: #ffc107;
+        margin-bottom: 1em;
+      }
+  
+      main .afterparallax .datos .dato2 {
+        border-color: #28a745;
+        margin-bottom: 1em;
+      }
+
+      main .parallax2 p {
+        font-size: 3em;
+      }
+  
+      main .parallax1 p {
+        text-align: center;
+        font-size: 3em;
+      }
+  
+      main .presentacion {
+        flex-direction: column-reverse;
+      }
+  
+      main .presentacion img{
+        width: 100%;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 0px;
+      }
+  
+      main .presentacion .info {
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 0%;
+        max-width: 75%;
+        font-size: 1.5em;
+      }
+  
+      main .historia {
+        flex-direction: column;
+      }
+    
+      main .historia .info {
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 0%;
+        max-width: 75%;
+        font-size: 1.5em;
+      }
+    
+      main .historia img {
+        width: 100%;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0px;
+      }
+
+      main .parallax1 {
+        background-attachment: local;
+      }
+
+      main .parallax2 {
+        background-attachment: local;
+      }
+    }
   }
