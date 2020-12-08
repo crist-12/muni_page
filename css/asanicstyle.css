@@ -41,7 +41,7 @@ main section.asan h1{
 main section.qhcm {
    margin-top: -5rem;
     height: 25rem;
-    background-image: url("/Tratadas/a\(6\).jpg");
+    background-image: url("/assets/a\(6\).jpg");
     background-repeat: no-repeat;
     background-position-x: left ;
     background-position-y: bottom ;
@@ -65,7 +65,7 @@ main section.qhcm p{
 main section.paralax{
     width: 100%;
     height: 27rem;
-    background-image: url("../Tratadas/a\(1\).jpg");
+    background-image: url("../assets/a\(1\).jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ main section.uno{
     display: flex;
     flex-wrap: wrap;
     background-color:#c9cdd1;
-    background-image: url("/Tratadas/a\(7\).JPG");
+    background-image: url("/assets/a\(7\).JPG");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
