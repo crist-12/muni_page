@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
 }
 
@@ -56,20 +57,21 @@ a:hover{
     display: none;
 }
 
-@media screen and (max-width:1130px){
+@media screen and (max-width:1185px){
     .logo img{
         width: 200px;
         margin-top: 10px;
     }
 }
 
-@media screen and (max-width:1075px){
+@media screen and (max-width:1141px){
     .checkbtn{
         display: block;
     }
 
     ul{
-        position: fixed;
+        position: absolute;
+        z-index: 1;
         width: 100%;
         height: 100vh;
         background: rgb(253, 252, 204);
