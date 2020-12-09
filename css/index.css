@@ -1,4 +1,3 @@
-
 body {
     margin:0px;
     padding:0px;
@@ -6,225 +5,23 @@ body {
     font-size: 16px;
     font-size:100%;
     font-size:1em;
-    margin-top:25px;
-    width: 100%;
 }
-
-header {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  top: 0px;
-  position: fixed;
-  padding-bottom: 1.5em;
-  border-width: 0px;
-  border-bottom-width: 1px;
-  box-shadow: 0px 2px 5px #000;
-  border-style: solid;
-  z-index: 1000; /*hace que el header esté encima de todo*/
-  animation: fade-intro-up 2s ease;
-  -webkit-animation: fade-intro-up 2s ease;
-}
-
-@keyframes fade-intro-up {
-    0%{opacity: 0;
-      -webkit-transform: translate3d(0,-50px,0);
-      -moz-transform: translate3d(0,-50px,0);
-      -ms-transform: translate3d(0,-50px,0);
-      -o-transform: translate3d(0,-50px,0);
-      transform: translate3d(0,-50px,0);
-    }
-    100%{
-      opacity: 1;
-      -webkit-transform: translate3d(0,0,0);
-      -moz-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      -o-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
-    }
-  }
-
-header .logo{
-  padding-top: 1.5em;
-}
-
-header nav {
-  padding-top: 1.5em;
-}
-
-.logo img{
-    width: 200px;
-    height: 58px;
-}
-
-header nav ul{
-    padding:0px;
-    margin:0px;
-    list-style: none;
-    display:flex;
-  }
-
-  header nav ul li {
-    box-sizing: border-box;
-  }
   
 /*Solo Dios sabe cómo funciona, así que no lo toque >:v */
 
-header nav ul li a{
-    display: inline-block;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    color:#333;
-    font-weight: bold;
-    background-color: #fff;
-  }
-
-  header nav ul li .yellow {
-    position:relative;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    transition: 0.5s;
-    padding: 0 20px;
-    cursor: pointer;
-    -webkit-transition:0.5s;
-  }
-  
-  header nav ul li .yellow:hover {
-    background-color: transparent;
-    border-color: transparent;
-    color: #ffc107;
-  }
-
-  header nav ul li .yellow:hover:before{
-    transition-delay: .2s;
-  }
-  
-  header nav ul li .yellow::before{
-    width: 0%;
-    height:100%;
-    z-index: 3;
-    content:'';
-    position: absolute;
-    bottom:-1px;
-    right:50%;
-    box-sizing: border-box;
-    transition: .2s;
-  }
-  
-  header nav ul li .yellow:hover::before {
-    width: 100% !important;
-    right: 0;
-    transition: .7s;
-  }
-  
-  header nav ul li .yellow::before {
-    border-bottom: 2px solid #ffc107;
-  }
-
-  header nav ul li .green {
-    position:relative;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    transition: 0.5s;
-    padding: 0 20px;
-    cursor: pointer;
-    -webkit-transition:0.5s;
-  }
-  
-  header nav ul li .green:hover {
-    background-color: transparent;
-    border-color: transparent;
-    color: #28a745;
-  }
-
-  header nav ul li .green:hover:before{
-    transition-delay: .2s;
-  }
-  
-  header nav ul li .green::before{
-    width: 0%;
-    height:100%;
-    z-index: 3;
-    content:'';
-    position: absolute;
-    bottom:-1px;
-    right:50%;
-    box-sizing: border-box;
-    transition: .2s;
-  }
-  
-  header nav ul li .green:hover::before {
-    width: 100% !important;
-    right: 0;
-    transition: .7s;
-  }
-  
-  header nav ul li .green::before {
-    border-bottom: 2px solid #28a745;
-  }
-
-  header nav ul li .gray {
-    position:relative;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    transition: 0.5s;
-    padding: 0 20px;
-    cursor: pointer;
-    -webkit-transition:0.5s;
-  }
-  
-  header nav ul li .gray:hover {
-    background-color: transparent;
-    border-color: transparent;
-    color: #6c757d;
-  }
-
-  header nav ul li .gray:hover:before{
-    transition-delay: .2s;
-  }
-  
-  header nav ul li .gray::before{
-    width: 0%;
-    height:100%;
-    z-index: 3;
-    content:'';
-    position: absolute;
-    bottom:-1px;
-    right:50%;
-    box-sizing: border-box;
-    transition: .2s;
-  }
-  
-  header nav ul li .gray:hover::before {
-    width: 100% !important;
-    right: 0;
-    transition: .7s;
-  }
-  
-  header nav ul li .gray::before {
-    border-bottom: 2px solid #6c757d;
-  }
 
   /*Hasta aquí >:v */
 
   main {
-    margin-top:7rem;
     width: 100%;
   }
 
   main .parallax1 {
     width: 100%;
-    height: 500px;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    height: 45rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,13 +41,13 @@ header nav ul li a{
   main .presentacion {
     display: flex;
     flex-direction: row;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   main .presentacion .info {
     font-family: 'Roboto';
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     background-color: #E2E2E2;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
@@ -258,27 +55,27 @@ header nav ul li a{
 
   main .presentacion .info .titulo {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 
   main .presentacion img {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    width: 800px;
+    width: 40rem;
   }
 
   main .historia {
     display: flex;
     flex-direction: row;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   main .historia .info {
     font-family: 'Roboto';
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     background-color: #E2E2E2;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -286,22 +83,22 @@ header nav ul li a{
 
   main .historia .info .titulo {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 
   main .historia img {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    width: 800px;
+    width: 25rem;
   }
 
   main .parallax2 {
     width: 100%;
-    height: 500px;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-top: 0em;
-    margin-bottom: 0em;
+    height: 40rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -330,19 +127,21 @@ header nav ul li a{
   main .afterparallax .titulo {
     font-family: 'Rock Salt';
     color: #fff;
-    font-size: 2em;
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
 
   main .afterparallax .titulo p {
-    margin-bottom: 0px;
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
     padding: 0px;
   }
 
   main .afterparallax .datos {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     margin-top: 0px;
     padding-top: 0px;
     display: flex;
@@ -356,9 +155,9 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     border: solid 2px #333333;
-    padding: 1em;
-    width: 320px;
-    height: 200px;
+    padding: 1rem;
+    width: 18rem;
+    height: 13rem;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -370,18 +169,18 @@ header nav ul li a{
   main .afterparallax .datos .dato1 .dato11{
     color: #bbb;
     font-family: 'Roboto';
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
-    padding: 0.1em;
+    padding: 0.1rem;
     margin: 0px;
   }
 
   main .afterparallax .datos .dato1 .dato12 {
     color: #fff;
     font-family: 'Ubuntu Mono';
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: bold;
-    padding: 0.1em;
+    padding: 0.1rem;
     margin: 0px;
   }
 
@@ -391,9 +190,9 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     border: solid 2px #333333;
-    padding: 1em;
-    width: 320px;
-    height: 200px;
+    padding: 1rem;
+    width: 18rem;
+    height: 13rem;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -405,18 +204,18 @@ header nav ul li a{
   main .afterparallax .datos .dato2 .dato21{
     color: #bbb;
     font-family: 'Roboto';
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
-    padding: 0.1em;
+    padding: 0.1rem;
     margin: 0px;
   }
 
   main .afterparallax .datos .dato2 .dato22 {
     color: #fff;
     font-family: 'Ubuntu Mono';
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: bold;
-    padding: 0.1em;
+    padding: 0.1rem;
     margin: 0px;
   }
 
@@ -425,7 +224,7 @@ header nav ul li a{
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    padding:0.5em;
+    padding:0.5rem;
     background-color:  #000;
     color: #f1ecdd;
   }
@@ -437,7 +236,7 @@ header nav ul li a{
   }
 
   footer nav ul li {
-      margin: 0px 2em;
+      margin: 1rem 2rem;
   }
 
   footer nav ul li a{
@@ -491,10 +290,7 @@ header nav ul li a{
   }
 
   @media screen and (max-width: 1024px) {
-    header {
-      position: absolute;
-    }
-
+    
     footer nav ul li {
       box-sizing: border-box;
       padding: 1em;
@@ -543,7 +339,7 @@ header nav ul li a{
       border-top-right-radius: 50px;
       border-top-left-radius: 50px;
       border-bottom-right-radius: 0%;
-      width: 93.5%;
+      width: 100%;
       font-size: 1.5em;
     }
 
@@ -555,7 +351,7 @@ header nav ul li a{
       border-top-right-radius: 50px;
       border-top-left-radius: 50px;
       border-bottom-left-radius: 0%;
-      width: 93.5%;
+      width: 100%;
       font-size: 1.5em;
     }
   
@@ -567,10 +363,7 @@ header nav ul li a{
     }
 
     @media screen and (max-width: 480px) {
-      header {
-        position: absolute;
-      }
-
+      
       footer nav ul li {
         box-sizing: border-box;
         padding: 1em;
@@ -632,7 +425,7 @@ header nav ul li a{
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 0%;
-        max-width: 75%;
+        max-width: 100%;
         font-size: 1.5em;
       }
   
@@ -644,7 +437,7 @@ header nav ul li a{
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
         border-bottom-left-radius: 0%;
-        max-width: 75%;
+        max-width: 100%;
         font-size: 1.5em;
       }
     
