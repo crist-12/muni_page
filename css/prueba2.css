@@ -67,7 +67,7 @@
         display: block;
     }
 
-    ul{
+    .menu ul{
         position: absolute;
         z-index: 1;
         width: 100%;
@@ -79,15 +79,15 @@
         transition: all .5s;
     }
 
-    nav ul li{
+    .menu ul li{
         display: block;
     }
 
-    nav ul li a{
+    .menu ul li a{
         font-size: 20px;
     }
 
-    a:hover{
+    .menu a:hover{
         color: blue;
     }
 
