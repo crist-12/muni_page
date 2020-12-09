@@ -1,0 +1,184 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #ededed;
+    font-size:100%;
+    font-size:1em;
+    width: 100%;
+}
+
+main section.Informacion {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    margin: 1rem 2rem;
+    position: relative;
+   width: 80%;
+   background-color: #ffffff;
+   border-radius: 2rem;
+ 
+}
+
+main section.Informacion h1 {
+    font-size: 2rem;
+    padding-top:0.8rem;
+}
+
+main section.Informacion p {
+    padding-top: 1rem;
+    margin: 1rem;
+}
+
+ main {
+     display: flex;
+     justify-content: center;
+ } 
+
+ 
+  
+/*      aqui comienza el footer          */
+  
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:0.5rem;
+    background-color:  #000;
+    color: #f1ecdd;
+  }
+
+  footer nav ul{
+    display:flex;
+    list-style: none;
+    padding:0px;
+  }
+
+  footer nav ul li {
+      margin: 1rem 2rem;
+  }
+
+  footer nav ul li a{
+    text-decoration: none;
+    color: #f1ecdd;
+    display:inline-block;
+    text-decoration:none;
+    padding: 0em 1em;
+    text-align:center;
+    font-size: 1.05rem;
+  }
+  
+  footer nav ul li a i{
+    width:33px;
+    vertical-align: middle;
+  }
+
+  .media {
+    padding: 0.1em 1em;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+  }
+
+  .media:hover{
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  footer section p{
+      justify-content: center;
+      text-align: center;
+  }
+
+
+/*
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:0.5em;
+    background-color:  #000;
+    color: #f1ecdd;
+    }
+    
+    footer nav ul{
+    display:flex;
+    list-style: none;
+    padding:0px;
+    }
+    
+    footer nav ul li {
+      margin: 0px 2em;
+    }
+    
+    footer nav ul li a{
+    text-decoration: none;
+    color: #f1ecdd;
+    display:inline-block;
+    text-decoration:none;
+    padding: 0em 1em;
+    text-align:center;
+    font-size: 1.05rem;
+    }
+    
+    footer nav ul li a i{
+    width:33px;
+    vertical-align: middle;
+    }
+    
+    .media {
+    padding: 0.1em 1em;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    }
+    
+    .media:hover{
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    }
+    @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    }
+    
+    footer section p{
+      justify-content: center;
+      text-align: center;
+    }
+    */
