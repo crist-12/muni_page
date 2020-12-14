@@ -21,8 +21,74 @@ section {
 	
 }
 
-fieldset{
-}
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding:0.5rem;
+    background-color:  #000;
+    color: #f1ecdd;
+  }
+
+  footer nav ul{
+    display:flex;
+    list-style: none;
+    padding:0px;
+  }
+
+  footer nav ul li {
+      margin: 1rem 2rem;
+  }
+
+  footer nav ul li a{
+    text-decoration: none;
+    color: #f1ecdd;
+    display:inline-block;
+    text-decoration:none;
+    padding: 0em 1em;
+    text-align:center;
+    font-size: 1.05rem;
+  }
+  
+  footer nav ul li a i{
+    width:33px;
+    vertical-align: middle;
+  }
+  .media {
+    padding: 0.1em 1em;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+  }
+
+  .media:hover{
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+
+  footer section p{
+      justify-content: center;
+      text-align: center;
+  }
 
 .formulario {
 	display: grid;
@@ -146,8 +212,6 @@ select {
 }
 
 
-/* ----- -----  Estilos para Validacion ----- ----- */
-
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #1ed12d;
 	opacity: 1;
@@ -167,7 +231,6 @@ select {
 }
 
 
-/* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
 	.formulario {
 		grid-template-columns: 1fr;
@@ -182,5 +245,21 @@ select {
 	.formulario__btn {
 		width: 100%;
 	}
+}
+
+@media screen and (max-width: 480px) {
+	footer nav ul li {
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+
+      footer nav ul {
+        flex-direction: column;
+      }
+
+      footer nav ul li a {
+        font-size: 1.5em;
+      }
 }
 
