@@ -34,9 +34,33 @@
     color: #000;
 }
 
-.menu a:hover{
-    color: royalblue;
-    transition: 0.5s;
+.menu a{
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: #fff;
+    transition: 0.5s ease;
+    color: #000000;
+}
+
+.menu a.yellow:hover{
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: #ffc107;
+    color: #ffc107;
+}
+
+.menu a.green:hover{
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.menu a.gray:hover{
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: #6c757d;
+    color: #6c757d;
 }
 
 .checkbtn{
@@ -55,7 +79,11 @@
     display: none;
 }
 
+
 @media screen and (max-width:1185px){
+    .menu a{
+        border-bottom-style: none;
+    }
     .logo img{
         width: 200px;
         margin-top: 10px;
@@ -65,6 +93,9 @@
 @media screen and (max-width:1141px){
     .checkbtn{
         display: block;
+    }
+    .menu a{
+        border-bottom-style: none;
     }
 
     .menu ul{
