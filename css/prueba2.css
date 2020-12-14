@@ -42,27 +42,6 @@
     color: #000000;
 }
 
-.menu a.yellow:hover{
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #ffc107;
-    color: #ffc107;
-}
-
-.menu a.green:hover{
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #28a745;
-    color: #28a745;
-}
-
-.menu a.gray:hover{
-    border-bottom-style: solid;
-    border-width: 4px;
-    border-color: #6c757d;
-    color: #6c757d;
-}
-
 .checkbtn{
     float: right;
     margin-top: 5px;
@@ -126,3 +105,129 @@
         left: 0;
     }
 }
+
+header nav ul li .yellow {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .yellow:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #ffc107;
+  }
+
+  header nav ul li .yellow:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .yellow::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .yellow:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .yellow::before {
+    border-bottom: 2px solid #ffc107;
+  }
+
+  header nav ul li .green {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .green:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #28a745;
+  }
+
+  header nav ul li .green:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .green::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .green:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .green::before {
+    border-bottom: 2px solid #28a745;
+  }
+
+  header nav ul li .gray {
+    position:relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+  }
+  
+  header nav ul li .gray:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #6c757d;
+  }
+
+  header nav ul li .gray:hover:before{
+    transition-delay: .2s;
+  }
+  
+  header nav ul li .gray::before{
+    width: 0%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    right:50%;
+    box-sizing: border-box;
+    transition: .2s;
+  }
+  
+  header nav ul li .gray:hover::before {
+    width: 100% !important;
+    right: 0;
+    transition: .7s;
+  }
+  
+  header nav ul li .gray::before {
+    border-bottom: 2px solid #6c757d;
+  }
