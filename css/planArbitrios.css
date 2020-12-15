@@ -6,16 +6,22 @@ body {
   font-size:100%;
   font-size:1em;
   width: 100%;
-  
+}
+
+header{
+  background-color: #ffffff;
+}
+
+main {
+  margin-bottom: 2em;
+  margin-top: 1.3em;
 }
 
 main section.content{
-
- display: flex;
+display: flex;
 justify-content: space-evenly;
 flex-direction: row;
 flex-wrap: wrap;
-
 }
 main  section.Informacion {
   display: flex;
@@ -24,11 +30,10 @@ main  section.Informacion {
   justify-content: center;
   margin: 1rem 2rem;
   position: relative;
- width: 80%;
- background-color: #ffffff;
- border-radius: 2rem;
- box-shadow: 0 0 10px;
-
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px;
 }
 
 main section.Informacion h1 {
@@ -46,7 +51,7 @@ main {
    justify-content: center;
   }
 
-/*bloques */
+
 main  section.bloques {
   display: flex;
   flex-direction: column;
@@ -120,6 +125,7 @@ main section.Informacion h1 {
 /*      aqui comienza el footer          */
 
 footer{
+
 display:flex;
 flex-direction: column;
 align-items:center;
