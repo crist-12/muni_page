@@ -190,40 +190,42 @@ main .grid section a{
 
 /*------------------------------------FOOTER-------------------------------------*/
 footer{
-display:flex;
-flex-direction: column;
-align-items:center;
-justify-content: center;
-padding:0.5em;
-background-color:  #000;
-color: #f1ecdd;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding:0.5em;
+  background-color:  #000;
+  color: #f1ecdd;
 }
 
 footer nav ul{
-display:flex;
-list-style: none;
-padding:0px;
+  display:flex;
+  list-style: none;
+  padding:0px;
 }
 
 footer nav ul li {
-  margin: 0px 2em;
+  margin: 1rem 2rem;
 }
 
 footer nav ul li a{
-text-decoration: none;
-color: #f1ecdd;
-display:inline-block;
-text-decoration:none;
-padding: 0em 1em;
-text-align:center;
-font-size: 1.05rem;
+  text-decoration: none;
+  color: #f1ecdd;
+  display:inline-block;
+  text-decoration:none;
+  padding: 0em 1em;
+  text-align:center;
+  font-size: 1.05rem;
 }
-
+footer section p{
+  justify-content: center;
+  text-align: center;
+}
 footer nav ul li a i{
-width:33px;
-vertical-align: middle;
+  width:33px;
+  vertical-align: middle;
 }
-
 .media {
 padding: 0.1em 1em;
 -webkit-transform: perspective(1px) translateZ(0);
@@ -254,11 +256,53 @@ animation-iteration-count: 1;
 }
 }
 
-footer section p{
-  justify-content: center;
-  text-align: center;
+/* Animacion .hvr-grow-shadow para los cards*/
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+ 
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
 }
+.hvr-grow-shadow:hover {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+} 
+  /* */
 
+  @media screen and (max-width: 1024px) {
+  
+    footer nav ul li {
+      box-sizing: border-box;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+  }  
+  @media screen and (max-width: 480px) {
+
+    
+    footer nav ul li {
+      box-sizing: border-box;
+      padding: 1em;
+      margin-bottom: 1em;
+    }
+
+    footer nav ul {
+      flex-direction: column;
+    }
+
+    footer nav ul li a {
+      font-size: 1.5em;
+    }
+  }
 
 /* @media (width:480px) {
     main .news{
